@@ -1,0 +1,10 @@
+.footer-control {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+.footer-control > a {
+    margin: 0 auto;
+    width: 200px;
+}

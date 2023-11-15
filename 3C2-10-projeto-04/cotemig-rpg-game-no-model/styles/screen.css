@@ -1,0 +1,102 @@
+.screen {
+    border: 5px solid green;
+    height: 450px;
+    margin: 1rem auto;
+    width: 800px;
+}
+
+.screen-menu {
+    background-image: url(../images/fundo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.screen-menu__title {
+    font-size: 4rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.screen-menu__fogos--esquerda {
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+
+.screen-menu__fogos--direita {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+}
+
+.screen-menu__message {
+    font-size: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.screen-menu__message--morreu {
+    color: red;
+}
+
+.screen-menu__message--venceu {
+    color: blueviolet;
+}
+
+.screen-menu__itens {
+    list-style: none;
+}
+
+.screen-menu__itens > li {
+    margin: 1rem auto;
+    width: 200px;
+}
+
+.screen-mapa {
+    background-image: url(../images/grama.jpg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screen-mapa__celula {
+    align-items: center;
+    display: flex;
+    height: 73px;
+    justify-content: center;
+    position: relative;
+    width: 79px;
+}
+
+.screen-mapa__celula__info {
+    position: absolute;
+    bottom: -40px;
+    color: blue;
+    font-size: .8rem;
+    text-align: center;
+    background-color: lightgrey;
+    padding: .1rem;
+    border-radius: .5rem;
+    opacity: .75;
+}
+
+.screen-mapa__celula__info--npc {
+    color: red;
+}
+
+.backdrop-load {
+    align-items: center;
+    background-color: lightgray;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    opacity: .4;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.backdrop-load--hidden {
+    display: none;
+}
